@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5tsctrvqfe3t"]
+
+[ext_resource type="Script" path="res://Scripts/MultiplayerController.cs" id="1_on2oo"]
+
+[node name="MultiplayerController" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_on2oo")
+
+[node name="Multiplayer" type="Node" parent="."]
+
+[node name="Scene" type="Node" parent="Multiplayer"]
+
+[node name="MultiplayerSceneLoader" type="MultiplayerSpawner" parent="Multiplayer"]
+_spawnable_scenes = PackedStringArray("res://Scenes/Lobby.tscn", "res://Scenes/main.tscn")
+spawn_path = NodePath("../Scene")
+
+[node name="UI" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Host" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = 552.0
+offset_top = 365.0
+offset_right = 689.0
+offset_bottom = 427.0
+text = "Host"
+
+[node name="Join" type="Button" parent="UI"]
+layout_mode = 0
+offset_left = 552.0
+offset_top = 487.0
+offset_right = 689.0
+offset_bottom = 549.0
+text = "Join
+"
+
+[node name="NameInput" type="LineEdit" parent="UI"]
+layout_mode = 0
+offset_left = 539.0
+offset_top = 171.0
+offset_right = 709.0
+offset_bottom = 202.0
+
+[node name="IP Input" type="LineEdit" parent="UI"]
+layout_mode = 0
+offset_left = 541.0
+offset_top = 252.0
+offset_right = 711.0
+offset_bottom = 283.0
+
+[node name="NameLabel" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 542.0
+offset_top = 131.0
+offset_right = 703.0
+offset_bottom = 161.0
+text = "Name:"
+
+[node name="IPLabel" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 542.0
+offset_top = 217.0
+offset_right = 703.0
+offset_bottom = 247.0
+text = "IP Address:"
+
+[connection signal="button_down" from="UI/Host" to="." method="_on_host_button_down"]
+[connection signal="button_down" from="UI/Join" to="." method="_on_join_button_down"]

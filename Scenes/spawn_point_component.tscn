@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://2tbpticggs8v"]
+
+[ext_resource type="Script" path="res://Scripts/SpawnPointComponent.cs" id="1_okrwm"]
+
+[node name="SpawnPointComponent" type="Node2D" groups=["SpawnPoint"]]
+script = ExtResource("1_okrwm")

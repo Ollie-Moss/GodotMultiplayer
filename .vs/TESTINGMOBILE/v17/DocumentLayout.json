@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\GodotProjects\\Testing\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8BAAC72E-C928-447D-8CB7-64A5C57EFC0D}|TestingMobile.csproj|c:\\godotprojects\\testing\\scripts\\multiplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BAAC72E-C928-447D-8CB7-64A5C57EFC0D}|TestingMobile.csproj|solutionrelative:scripts\\multiplayercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BAAC72E-C928-447D-8CB7-64A5C57EFC0D}|TestingMobile.csproj|C:\\GodotProjects\\Testing\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BAAC72E-C928-447D-8CB7-64A5C57EFC0D}|TestingMobile.csproj|solutionrelative:scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BAAC72E-C928-447D-8CB7-64A5C57EFC0D}|TestingMobile.csproj|C:\\GodotProjects\\Testing\\scripts\\playerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BAAC72E-C928-447D-8CB7-64A5C57EFC0D}|TestingMobile.csproj|solutionrelative:scripts\\playerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BAAC72E-C928-447D-8CB7-64A5C57EFC0D}|TestingMobile.csproj|C:\\GodotProjects\\Testing\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BAAC72E-C928-447D-8CB7-64A5C57EFC0D}|TestingMobile.csproj|solutionrelative:scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BAAC72E-C928-447D-8CB7-64A5C57EFC0D}|TestingMobile.csproj|C:\\GodotProjects\\Testing\\scripts\\mainscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BAAC72E-C928-447D-8CB7-64A5C57EFC0D}|TestingMobile.csproj|solutionrelative:scripts\\mainscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BAAC72E-C928-447D-8CB7-64A5C57EFC0D}|TestingMobile.csproj|C:\\GodotProjects\\Testing\\scripts\\lobbyscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BAAC72E-C928-447D-8CB7-64A5C57EFC0D}|TestingMobile.csproj|solutionrelative:scripts\\lobbyscenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerInfo.cs",
+              "DocumentMoniker": "C:\\GodotProjects\\Testing\\Scripts\\PlayerInfo.cs",
+              "RelativeDocumentMoniker": "Scripts\\PlayerInfo.cs",
+              "ToolTip": "C:\\GodotProjects\\Testing\\Scripts\\PlayerInfo.cs",
+              "RelativeToolTip": "Scripts\\PlayerInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T04:42:19.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainSceneManager.cs",
+              "DocumentMoniker": "C:\\GodotProjects\\Testing\\Scripts\\MainSceneManager.cs",
+              "RelativeDocumentMoniker": "Scripts\\MainSceneManager.cs",
+              "ToolTip": "C:\\GodotProjects\\Testing\\Scripts\\MainSceneManager.cs",
+              "RelativeToolTip": "Scripts\\MainSceneManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T03:42:26.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LobbySceneManager.cs",
+              "DocumentMoniker": "C:\\GodotProjects\\Testing\\Scripts\\LobbySceneManager.cs",
+              "RelativeDocumentMoniker": "Scripts\\LobbySceneManager.cs",
+              "ToolTip": "C:\\GodotProjects\\Testing\\Scripts\\LobbySceneManager.cs",
+              "RelativeToolTip": "Scripts\\LobbySceneManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T03:41:59.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MultiplayerController.cs",
+              "DocumentMoniker": "C:\\GodotProjects\\Testing\\Scripts\\MultiplayerController.cs",
+              "RelativeDocumentMoniker": "Scripts\\MultiplayerController.cs",
+              "ToolTip": "C:\\GodotProjects\\Testing\\Scripts\\MultiplayerController.cs",
+              "RelativeToolTip": "Scripts\\MultiplayerController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAA5wEIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T03:36:10.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\GodotProjects\\Testing\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Scripts\\GameManager.cs",
+              "ToolTip": "C:\\GodotProjects\\Testing\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Scripts\\GameManager.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T03:35:17.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\GodotProjects\\Testing\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Scripts\\Player.cs",
+              "ToolTip": "C:\\GodotProjects\\Testing\\Scripts\\Player.cs",
+              "RelativeToolTip": "Scripts\\Player.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAmwD0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T03:30:04.188Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

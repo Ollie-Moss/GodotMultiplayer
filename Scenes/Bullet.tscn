@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://c3sm86m6ewbu6"]
+
+[ext_resource type="Script" path="res://Scripts/Bullet.cs" id="1_7ouq2"]
+[ext_resource type="Texture2D" uid="uid://cntk4kemfet0y" path="res://industrial.v2.png" id="1_alipd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uwtmm"]
+atlas = ExtResource("1_alipd")
+region = Rect2(208, 256, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0e7h4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uwtmm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4oj8s"]
+radius = 7.07107
+
+[node name="Node2D" type="CharacterBody2D"]
+script = ExtResource("1_7ouq2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_0e7h4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4oj8s")

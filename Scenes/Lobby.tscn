@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://idylp014awtm"]
+
+[ext_resource type="Script" path="res://Scripts/LobbySceneManager.cs" id="1_ahqyb"]
+
+[node name="Lobby" type="Node2D"]
+script = ExtResource("1_ahqyb")
+
+[node name="Start Game" type="Button" parent="."]
+offset_left = 522.0
+offset_top = 506.0
+offset_right = 772.0
+offset_bottom = 592.0
+text = "Start
+"
+
+[node name="PlayersItemList" type="ItemList" parent="."]
+offset_left = 387.0
+offset_top = 127.0
+offset_right = 951.0
+offset_bottom = 480.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+auto_height = true
+
+[node name="PlayersLabel" type="Label" parent="."]
+offset_left = 387.0
+offset_top = 97.0
+offset_right = 494.0
+offset_bottom = 120.0
+text = "Players:"

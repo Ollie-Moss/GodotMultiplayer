@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://tv8y5e3chbib"]
+
+[ext_resource type="Texture2D" uid="uid://cntk4kemfet0y" path="res://industrial.v2.png" id="1_ghyml"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_db4i4"]
+atlas = ExtResource("1_ghyml")
+region = Rect2(0, 256, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bctg1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_db4i4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="LobbyCharacter" type="Node2D"]
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(2.875, 2.875)
+sprite_frames = SubResource("SpriteFrames_bctg1")
+
+[node name="NameLabel" type="Label" parent="."]
+texture_filter = 1
+offset_left = -23.0
+offset_top = -47.0
+offset_right = 24.0
+offset_bottom = -24.0
+text = "Name"
+horizontal_alignment = 1
