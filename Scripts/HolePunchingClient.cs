@@ -9,7 +9,8 @@ using System.Runtime.CompilerServices;
 
 public partial class HolePunchingClient : Node2D
 {
-	[Signal]
+
+    [Signal]
 	public delegate void HolePunchedEventHandler();
 	
 	[Signal]

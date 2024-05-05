@@ -14,8 +14,8 @@ public partial class MultiplayerController : Control
 
 	public override void _Ready()
 	{
-		GetNode<HolePunchingClient>("Hole Punching Component").HolePunched += joinGame;
-		GetNode<HolePunchingClient>("Hole Punching Component").HostStarted += hostGame;
+		GetNode<ClientManager>("Hole Punching Component").HolePunched += joinGame;
+		GetNode<ClientManager>("Hole Punching Component").HostStarted += hostGame;
 		Multiplayer.PeerConnected += PeerConnected;
 		Multiplayer.PeerDisconnected += PeerDisconnected;
 		Multiplayer.ConnectedToServer += ConnectedToServer;
@@ -97,21 +97,21 @@ public partial class MultiplayerController : Control
 
 	public void _on_host_button_down()
 	{
-		GetNode<HolePunchingClient>("Hole Punching Component").StartClient(true); 
+		GetNode<ClientManager>("Hole Punching Component").StartTraversel(true); 
 		
 	}
 
 	public void _on_join_button_down()
 	{
-		GetNode<HolePunchingClient>("Hole Punching Component").StartClient(false);
-	}
+        GetNode<ClientManager>("Hole Punching Component").StartTraversel(false);
+    }
 
 	public void joinGame()
 	{
 		GD.Print("Connecting to Server...");
-		//ipAddress = GetNode<LineEdit>("IP Input").Text;
+		ipAddress = GetNode<LineEdit>("IP Input").Text;
 		peer = new ENetMultiplayerPeer();
-		var error = peer.CreateClient(ipAddress, port);
+		var error = peer.CreateClient(ipAddress, port, localPort: 25565);
 		if (error != Error.Ok)
 		{
 			GD.Print("Error failed to connect to server: " + error);
