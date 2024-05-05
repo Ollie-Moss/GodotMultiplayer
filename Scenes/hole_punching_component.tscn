@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1ptxfvxd7o2d"]
+
+[ext_resource type="Script" path="res://Scripts/HolePunchingClient.cs" id="1_xxvsv"]
+
+[node name="Hole Punching Component" type="Node2D"]
+script = ExtResource("1_xxvsv")

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c5tsctrvqfe3t"]
+[gd_scene load_steps=3 format=3 uid="uid://c5tsctrvqfe3t"]
 
 [ext_resource type="Script" path="res://Scripts/MultiplayerController.cs" id="1_on2oo"]
+[ext_resource type="PackedScene" uid="uid://c1ptxfvxd7o2d" path="res://Scenes/hole_punching_component.tscn" id="2_qkse4"]
 
 [node name="MultiplayerController" type="Control"]
 layout_mode = 3
@@ -70,6 +71,8 @@ offset_top = 217.0
 offset_right = 703.0
 offset_bottom = 247.0
 text = "IP Address:"
+
+[node name="Hole Punching Component" parent="." instance=ExtResource("2_qkse4")]
 
 [connection signal="button_down" from="UI/Host" to="." method="_on_host_button_down"]
 [connection signal="button_down" from="UI/Join" to="." method="_on_join_button_down"]
