@@ -73,6 +73,7 @@ offset_bottom = 247.0
 text = "IP Address:"
 
 [node name="Hole Punching Component" parent="." instance=ExtResource("2_qkse4")]
+ServerIP = "192.168.1.80"
 
 [connection signal="button_down" from="UI/Host" to="." method="_on_host_button_down"]
 [connection signal="button_down" from="UI/Join" to="." method="_on_join_button_down"]
