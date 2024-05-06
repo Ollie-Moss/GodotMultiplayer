@@ -97,14 +97,14 @@ public partial class MultiplayerController : Control
 
 	public void _on_host_button_down()
 	{
-		GetNode<ClientManager>("Hole Punching Component").StartTraversel(true); 
+		GetNode<ClientManager>("Hole Punching Component");
 		
 	}
 
 	public void _on_join_button_down()
 	{
-        GetNode<ClientManager>("Hole Punching Component").StartTraversel(false);
-    }
+		GetNode<ClientManager>("Hole Punching Component");
+	}
 
 	public void joinGame()
 	{

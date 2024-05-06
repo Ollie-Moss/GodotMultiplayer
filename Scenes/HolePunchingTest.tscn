@@ -1,0 +1,103 @@
+[gd_scene load_steps=3 format=3 uid="uid://qrvnp3i5rc6d"]
+
+[ext_resource type="Script" path="res://Scripts/NetworkManager.cs" id="1_pqpd5"]
+[ext_resource type="PackedScene" uid="uid://c1ptxfvxd7o2d" path="res://Scenes/hole_punching_component.tscn" id="2_q10h1"]
+
+[node name="NetworkManager" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pqpd5")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HostUI" type="Control" parent="UI"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HostButton" type="Button" parent="UI/HostUI"]
+layout_mode = 0
+offset_left = 435.0
+offset_top = 384.0
+offset_right = 616.0
+offset_bottom = 473.0
+text = "Host
+"
+
+[node name="GameCode Label" type="Label" parent="UI/HostUI"]
+visible = false
+offset_left = 645.0
+offset_top = 418.0
+offset_right = 739.0
+offset_bottom = 441.0
+text = "Game Code:"
+horizontal_alignment = 1
+
+[node name="JoinUI" type="Control" parent="UI"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="JoinButton" type="Button" parent="UI/JoinUI"]
+offset_left = 691.0
+offset_top = 428.0
+offset_right = 872.0
+offset_bottom = 471.0
+text = "Join"
+
+[node name="CodeInput" type="LineEdit" parent="UI/JoinUI"]
+layout_mode = 0
+offset_left = 690.0
+offset_top = 383.0
+offset_right = 872.0
+offset_bottom = 414.0
+placeholder_text = "Enter Game Code"
+
+[node name="NameInput" type="LineEdit" parent="UI"]
+layout_mode = 0
+offset_left = 499.0
+offset_top = 318.0
+offset_right = 869.0
+offset_bottom = 349.0
+
+[node name="OR Label" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 621.0
+offset_top = 416.0
+offset_right = 688.0
+offset_bottom = 439.0
+text = "- OR -"
+horizontal_alignment = 1
+
+[node name="Multiplayer Label" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 434.0
+offset_top = 269.0
+offset_right = 565.0
+offset_bottom = 301.0
+theme_override_font_sizes/font_size = 23
+text = "Multiplayer"
+
+[node name="Name Label" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 434.0
+offset_top = 319.0
+offset_right = 488.0
+offset_bottom = 342.0
+text = "Name:"
+
+[node name="Hole Punching Component" parent="." instance=ExtResource("2_q10h1")]
+serverPort = 11101
+
+[connection signal="pressed" from="UI/HostUI/HostButton" to="." method="_on_host_button_pressed"]
+[connection signal="pressed" from="UI/JoinUI/JoinButton" to="." method="_on_join_button_pressed"]
